@@ -31,6 +31,10 @@ class OctometerPlugin(
             self._logger.info(
                 f"Could not connect to DB at {self.db_path}, failed with error {e}."
             )
+            with open(self.db_file, "w") as f:
+                pass
+
+            self.create_connection()
         finally:
             if self.conn:
                 self.c.execute(
