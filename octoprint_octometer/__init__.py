@@ -7,7 +7,7 @@ import octoprint.filemanager
 import octoprint.filemanager.util
 import octoprint.plugin
 
-import datetime.timedelta
+from datetime import datetime
 
 
 class OctometerPlugin(
