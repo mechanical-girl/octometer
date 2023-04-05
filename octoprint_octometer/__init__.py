@@ -64,7 +64,7 @@ class OctometerPlugin(
             )
             filament_used = filament_total
 
-            self_logger.info(
+            self._logger.info(
                 f"Print {file_name} finished after {str(datetime.timedelta(seconds=duration))}, writing to database..."
             )
 
